@@ -32,7 +32,7 @@ function App() {
   }
 
   return (
-    <div className="container flex relative bg-red-500">
+    <div className="container flex relative">
       <div className='w-full absolute bottom-0 left-0 top-0 right-0 z-0 bg-[rgba(25,43,66,0.4)]'>
       </div>
       <img src={logo} alt="" className='absolute top-8 lg:top-5 left-[30%] lg:left-[40%] h-[6rem] lg:h-[7rem]'/>
