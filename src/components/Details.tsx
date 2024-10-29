@@ -34,8 +34,8 @@ export const Details = ({name, ki, maxKi, race, gender, description, image}: Det
           </div>
         </div>
       </div>
-      <div className="w-full lg:w-1/2 flex justify-center md:justify-end xl:justify-center items-center z-40">
-        <img src={image} alt="" className='w-[40%] md:w-[70%] character__image'/>
+      <div className="w-full lg:w-1/2 flex justify-center lg:justify-end xl:justify-center items-center z-40">
+        <img src={image} alt="" className='w-[40%] md:w-[80%] max-h-[800px] max-w-[350px] character__image'/>
       </div>
     </div>
   )

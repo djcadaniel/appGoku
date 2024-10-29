@@ -13,19 +13,23 @@ function App() {
     fetchGooku()
   },[])
 
+  console.log(data.length)
+
   const filterPersonajes = () =>{
     return data.slice(currentPage,currentPage + 1)
   }
 
   const nextPage = () => {
-    setCurrentPage(currentPage + 1)
+    if(currentPage < data.length - 1){
+      setCurrentPage(currentPage + 1)
+    }
   }
 
   const prevPage = () => {
-    setCurrentPage(currentPage - 1)
+    if(currentPage > 0){
+      setCurrentPage(currentPage - 1)
+    }
   }
-
-  console.log(filterPersonajes())
 
   return (
     <div className="container flex relative bg-red-500">

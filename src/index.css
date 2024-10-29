@@ -57,14 +57,14 @@
   }
 }
 
-@media (max-width:768px){
+@media (max-width:1024px){
   .container{
     max-width: 1500px;
     min-width: 420px;
-    width: 100%;
-    margin: 0 auto;
-    height: auto;
-    max-height: 2000px;
+    max-height: 6000px;
+}
+
+@media (max-width:768px){
   }
   .k1, .k2, .gender{
     font-size: 13px;
