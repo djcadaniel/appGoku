@@ -12,9 +12,9 @@ export const Details = ({name, ki, maxKi, race, gender, description, image}: Det
   return (
     <div className="w-full flex flex-col lg:flex-row">
       <div className="w-full lg:w-1/2 flex flex-col justify-center items-start gap-3 md:gap-5">
-        <div className="w-full mt-10 md:mt-20 md:m-0">
-          <h1 className="text-3xl md:text-[3.5rem] text-white text-right lg:text-left title_character">{name}</h1>
-          <h2 className="text-xl md:text-[2rem] mt-2 lg:mt-8 text-white race_character text-right lg:text-left">{race}</h2>
+        <div className="w-full mt-36 md:mt-20 md:m-0">
+          <h1 className="text-3xl md:text-[3.5rem] text-white text-center lg:text-left title_character">{name}</h1>
+          <h2 className="text-xl md:text-[2rem] mt-2 lg:mt-8 text-white race_character text-center lg:text-left">{race}</h2>
         </div>
         <p className="text-slate-100 mt-10 lg:mt-7 description_character text-justify">
           {description}

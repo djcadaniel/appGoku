@@ -35,11 +35,11 @@ function App() {
     <div className="container flex relative bg-red-500">
       <div className='w-full absolute bottom-0 left-0 top-0 right-0 z-0 bg-[rgba(25,43,66,0.4)]'>
       </div>
-      <img src={logo} alt="" className='absolute top-8 lg:top-5 left-[8px] lg:left-[40%] h-[6rem] lg:h-[7rem]'/>
-      <button className='absolute top-[45%] left-5 text-4xl text-white z-50' onClick={prevPage}>
+      <img src={logo} alt="" className='absolute top-8 lg:top-5 left-[30%] lg:left-[40%] h-[6rem] lg:h-[7rem]'/>
+      <button className='absolute top-[15%] md:top-[45%] left-5 text-4xl text-white z-50' onClick={prevPage}>
         <FaArrowAltCircleLeft />
       </button>
-      <button className='absolute top-[45%] right-5 text-white text-4xl z-50' onClick={nextPage}>
+      <button className='absolute top-[15%] md:top-[45%] right-5 text-white text-4xl z-50' onClick={nextPage}>
       <FaArrowAltCircleRight />
       </button>
       <div className="w-full h-full flex px-6 lg:px-24 gap-3 z-5">
