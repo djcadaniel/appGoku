@@ -3,10 +3,11 @@ import { Details } from './components/Details'
 import { useGoku } from './hooks/useGoku'
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from 'react-icons/fa';
 import logo from '/logo.png'
+import { Spinner } from './components/Spinner';
 
 function App() {
 
-  const {fetchGooku, data} = useGoku();
+  const {fetchGooku, data, isLoading} = useGoku();
   const [currentPage, setCurrentPage] = useState(0)
 
   useEffect(()=>{
@@ -42,7 +43,12 @@ function App() {
       <button className='absolute top-[15%] md:top-[45%] right-5 text-white text-4xl z-50' onClick={nextPage}>
       <FaArrowAltCircleRight />
       </button>
-      <div className="w-full h-full flex px-6 lg:px-24 gap-3 z-5">
+      <div className="relative w-full h-full flex px-6 lg:px-24 gap-3 z-5">
+        {isLoading && (
+          <div className=' absolute bottom-80 left-[40%]'>
+            <Spinner/>
+          </div>
+        )}
         {
           filterPersonajes().map(item => (
             <Details 
