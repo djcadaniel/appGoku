@@ -45,7 +45,7 @@ function App() {
       </button>
       <div className="relative w-full h-full flex px-6 lg:px-24 gap-3 z-5">
         {isLoading && (
-          <div className=' absolute bottom-80 left-[40%]'>
+          <div className='absolute left-0 top-80 w-full'>
             <Spinner/>
           </div>
         )}
