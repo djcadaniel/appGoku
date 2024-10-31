@@ -32,7 +32,7 @@ export const Home = () => {
   }
 
   return (
-    <div className="flex relative h-full w-full">
+    <div className="flex relative h-auto w-full">
       <div className='w-full h-auto lg:min-h-[100vh] absolute bottom-0 left-0 top-0 right-0 z-0 bg-[rgba(25,43,66,0.4)]'>
       </div>      
       <button className='absolute top-[15%] md:top-[45%] left-5 text-4xl text-white z-50' onClick={prevPage}>
@@ -41,7 +41,7 @@ export const Home = () => {
       <button className='absolute top-[15%] md:top-[45%] right-5 text-white text-4xl z-50' onClick={nextPage}>
       <FaArrowAltCircleRight />
       </button>
-      <div className="relative w-full h-auto lg:h-[100vh] flex px-6 lg:px-24 gap-3">
+      <div className="relative w-full min-h-[100vh] lg:h-[100vh] flex px-6 lg:px-24 gap-3">
         {isLoading && (
           <div className='absolute left-0 top-80 w-full'>
             <Spinner />
