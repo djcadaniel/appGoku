@@ -1,11 +1,11 @@
-import { useEffect, useState } from 'react';
-import { Details } from './components/Details'
-import { useGoku } from './hooks/useGoku'
-import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from 'react-icons/fa';
+import { useEffect, useState } from "react";
+import { useGoku } from "../hooks/useGoku";
+import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
+import { Spinner } from "../components/Spinner";
+import { Details } from "../components/Details";
 import logo from '/logo.png'
-import { Spinner } from './components/Spinner';
 
-function App() {
+export const Home = () => {
 
   const {fetchGooku, data, isLoading} = useGoku();
   const [currentPage, setCurrentPage] = useState(0)
@@ -33,8 +33,8 @@ function App() {
   }
 
   return (
-    <div className="container flex relative">
-      <div className='w-full absolute bottom-0 left-0 top-0 right-0 z-0 bg-[rgba(25,43,66,0.4)]'>
+    <div className="flex relative h-full w-full">
+      <div className='w-full min-h-[100vh] absolute bottom-0 left-0 top-0 right-0 z-0 bg-[rgba(25,43,66,0.4)]'>
       </div>
       <img src={logo} alt="" className='absolute top-8 lg:top-5 left-[30%] lg:left-[40%] h-[6rem] lg:h-[7rem]'/>
       <button className='absolute top-[15%] md:top-[45%] left-5 text-4xl text-white z-50' onClick={prevPage}>
@@ -43,10 +43,10 @@ function App() {
       <button className='absolute top-[15%] md:top-[45%] right-5 text-white text-4xl z-50' onClick={nextPage}>
       <FaArrowAltCircleRight />
       </button>
-      <div className="relative w-full h-full flex px-6 lg:px-24 gap-3 z-5">
+      <div className="relative w-full h-[100vh] flex px-6 lg:px-24 gap-3">
         {isLoading && (
           <div className='absolute left-0 top-80 w-full'>
-            <Spinner/>
+            <Spinner />
           </div>
         )}
         {
@@ -67,5 +67,3 @@ function App() {
     </div>
   )
 }
-
-export default App

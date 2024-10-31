@@ -18,20 +18,32 @@ body{
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: auto;
+  height: auto
 }
 
-.container{
-  max-width: 1500px;
+header{
+  z-index: 99;
+  /* background-color: blue; */
+}
+
+.container {
+  max-width: 1600px;
   min-width: 420px;
   width: 100%;
+  height: calc(100vh);
   margin: 0 auto;
-  height: 100vh;
-  max-height: 900px;
   background: linear-gradient(to right, #0a161f, #892b02, #FF7202);
+  /* background-color: green !important; */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: 50;
+}
+.container2{
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  min-width: 420px;
 }
 
 .attri{
@@ -73,10 +85,10 @@ body{
     max-height: 8500px;
     min-height: 100vh;
     height: auto;
+  }
 }
 
 @media (max-width:768px){
-  }
   .k1, .k2, .gender{
     font-size: 13px;
   }
