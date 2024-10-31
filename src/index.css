@@ -24,6 +24,7 @@ body{
 header{
   z-index: 99;
   /* background-color: blue; */
+  font-family: "Rubik", sans-serif;
 }
 
 .container {
@@ -89,6 +90,9 @@ header{
 }
 
 @media (max-width:768px){
+  .container{
+    height: auto !important;
+  }
   .k1, .k2, .gender{
     font-size: 13px;
   }

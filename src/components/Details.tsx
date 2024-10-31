@@ -10,7 +10,7 @@ interface DetailsProps {
 
 export const Details = ({name, ki, maxKi, race, gender, description, image}: DetailsProps) => {
   return (
-    <div className="w-full grid grid-cols-1 lg:grid-cols-2 h-full">
+    <div className="w-full grid grid-cols-1 lg:grid-cols-2 h-full pb-12">
       <div className=" row-start-1 lg:col-start-1 w-full mt-36 md:mt-[200px] md:m-0">
         <h1 className="text-3xl md:text-[3.5rem] text-white text-center lg:text-left title_character">{name}</h1>
         <h2 className="text-xl md:text-[2rem] mt-2 lg:mt-8 text-white race_character text-center lg:text-left">{race}</h2>
