@@ -31,7 +31,7 @@ export const useGoku = () => {
         const {items} = data
         const result = Character.safeParse(items)
         if(result.success){
-          console.log(result)
+          // console.log(result)
           setData(result.data)
         }
       }catch(error){
