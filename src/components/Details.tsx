@@ -62,7 +62,7 @@ export const Details = ({name, ki, maxKi, race, gender, description, image}: Det
           </div>
         </div>
       </div>
-      <div className="row-start-2 lg:col-start-2 lg:row-start-1 lg:row-span-2 w-full h-[650px] flex justify-center lg:justify-end xl:justify-center items-center py-12 z-40 ">
+      <div className="row-start-2 lg:col-start-2 lg:row-start-1 lg:row-span-2 w-full h-[650px] md:h-auto flex justify-center lg:justify-end xl:justify-center items-center py-12 z-40 ">
         <img src={image} alt="" className='max-h-[400px] md:max-h-[800px] character__image'/>
       </div>
     </div>

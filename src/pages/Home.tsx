@@ -13,7 +13,7 @@ export const Home = () => {
     fetchGooku()
   },[])
 
-  console.log(data.length)
+  console.log(data)
 
   const filterPersonajes = () =>{
     return data.slice(currentPage,currentPage + 1)

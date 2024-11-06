@@ -1,20 +1,22 @@
 import axios from 'axios'
 import { useState } from 'react'
-import { z } from 'zod'
+// import { z } from 'zod'
+import { Character } from '../types'
 
-const Character = z.array(
-  z.object({
-    name: z.string(),
-    race: z.string(),
-    description: z.string(),
-    ki: z.string(),
-    maxKi: z.string(),
-    gender: z.string(),
-    image: z.string()
-  })
-)
+// const Character = z.array(
+//   z.object({
+//     id: z.number(),
+//     name: z.string(),
+//     race: z.string(),
+//     description: z.string(),
+//     ki: z.string(),
+//     maxKi: z.string(),
+//     gender: z.string(),
+//     image: z.string()
+//   })
+// )
 
-type Character = z.infer<typeof Character>
+// type Character = z.infer<typeof Character>
 
 export const useGoku = () => {
 
@@ -33,6 +35,8 @@ export const useGoku = () => {
         if(result.success){
           // console.log(result)
           setData(result.data)
+        }else{
+          console.log("Errores de validacion", result.error.errors)
         }
       }catch(error){
         console.log(error)
