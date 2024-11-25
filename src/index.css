@@ -146,3 +146,10 @@ header{
     -webkit-transform: scale(1.0);
   }
 }
+
+
+.title_character, .race_character, .k1, .k2, .gender{
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
