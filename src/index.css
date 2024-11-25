@@ -33,7 +33,7 @@ header{
   width: 100%;
   height: calc(100vh);
   margin: 0 auto;
-  background: linear-gradient(to right, #0a161f, #892b02, #FF7202);
+  background: linear-gradient(to right, #1E3E62, #892b02, #FF6500);
   /* background-color: green !important; */
   background-size: cover;
   background-repeat: no-repeat;

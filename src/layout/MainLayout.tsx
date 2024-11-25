@@ -8,7 +8,7 @@ interface MainLayoutProps {
 
 export const MainLayout = ({children}: MainLayoutProps) => {
   return (
-    <div className="relative bg-blue-700">
+    <div className="relative bg-[#1E3E62]">
       <img src={logo} alt="" className='absolute top-8 lg:top-5 left-[3%] lg:left-[40%] h-[5rem] lg:h-[7rem] z-50'/>
       <Navbar />
       <section className="mt-[-50px] z-10 container">
